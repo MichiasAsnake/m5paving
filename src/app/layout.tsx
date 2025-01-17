@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -7,7 +7,14 @@ const inter = Inter({
   display: 'swap',
 });
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL('https://cesarsconcrete.com'),
   title: "Cesar's Concrete | Loveland's Premier Concrete Contractor",
   description: "Expert concrete services in Loveland, CO. Specializing in driveways, patios, walkways, and commercial concrete solutions. Quality craftsmanship with 25+ years experience.",
   keywords: "concrete contractor, Loveland concrete, driveway installation, concrete patio, walkways, commercial concrete, residential concrete, Colorado concrete services",
@@ -38,11 +45,6 @@ export const metadata: Metadata = {
     title: "Cesar's Concrete | Loveland's Premier Concrete Contractor",
     description: "Expert concrete services in Loveland, CO. Quality craftsmanship with 25+ years experience.",
     images: ['/logom5 1.png'],
-  },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
   },
   robots: {
     index: true,
