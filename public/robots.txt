@@ -1,0 +1,10 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location (you'll need to create this)
+Sitemap: https://cesarsconcrete.com/sitemap.xml
+
+# Prevent crawling of admin or private pages
+Disallow: /api/
+Disallow: /admin/ 
